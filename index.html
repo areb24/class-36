@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <script src = "https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    
+    <script>
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBZVdzkMC7MBv088VvFM_l5VuJZBiOxe_c",
+      authDomain: "multiplayercarracing-b572f.firebaseapp.com",
+      projectId: "multiplayercarracing-b572f",
+      storageBucket: "multiplayercarracing-b572f.appspot.com",
+      messagingSenderId: "860436398499",
+      appId: "1:860436398499:web:a149d9cc7e9851bcf15a16"
+    };
+    
+    // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+  </script>
+  <link rel = "stylesheet" type="text/css" href = "style.css"/>
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
